@@ -3,6 +3,7 @@ package ar.edu.unlam.tallerweb1.modelo;
 
 import java.util.ArrayList;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -21,7 +22,7 @@ public class Comuna {
 	private String nombre;
 	
 	
-	@ManyToOne (fetch = FetchType.LAZY)
+	@OneToMany (mappedBy = "comuna", cascade = CascadeType.ALL)
 	private Barrio barrio;
 
 	public Long getId() {

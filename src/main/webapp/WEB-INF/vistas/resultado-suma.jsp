@@ -7,7 +7,7 @@
 <title>Operacion: ${suma}</title>
 
 <h1>${suma}</h1>
-<h2>El resultado de la operacion ${suma} entre ${valor1} y {valor2} es igual a ${resultado}</h2>
+<h2>El resultado de la operacion ${suma} entre ${valor1} y ${valor2} es igual a ${resultado}</h2>
 </head>
 <body>
 
