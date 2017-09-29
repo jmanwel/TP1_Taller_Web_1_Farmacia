@@ -2,6 +2,7 @@ package ar.edu.unlam.tallerweb1.modelo;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -23,8 +24,8 @@ public class Comuna {
 	
 	
 	@OneToMany (mappedBy = "comuna", cascade = CascadeType.ALL)
-	private Barrio barrio;
-
+	private List <Barrio> listaBarrio = new ArrayList <Barrio>();
+	
 	public Long getId() {
 		return id;
 	}
@@ -41,17 +42,15 @@ public class Comuna {
 		this.nombre = nombre;
 	}
 
+	public List<Barrio> getListaBarrio() {
+		return listaBarrio;
+	}
+
+	public void setListaBarrio(ArrayList<Barrio> listaBarrio) {
+		this.listaBarrio = listaBarrio;
+	}
 	
-	private ArrayList <Barrio> listaBarrio = new ArrayList <Barrio>();
 	
-	public void agregarBarrio (Barrio b) 
-	{listaBarrio.add(b);}
-	
-	public void setBarrio (Barrio b) 
-	{this.barrio=b;}
-	
-	public Barrio getBarrio() 
-	{return barrio;}
 	
 	
 }

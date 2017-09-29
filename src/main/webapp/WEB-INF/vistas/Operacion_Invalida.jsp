@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Resultado invalido</title>
+<title>Insert title here</title>
+<title>Operacion incorrecta</title>
 
-<h1>Resultado invalido</h1>
-
+<h1>Operacion incorrecta</h1>
 </head>
 <body>
 

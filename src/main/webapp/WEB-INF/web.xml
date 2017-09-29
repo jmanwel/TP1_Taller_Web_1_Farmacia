@@ -33,4 +33,14 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:/applicationContext.xml</param-value>
     </context-param>
+    
+   
+    <error-page>	
+   	 <error-code>404</error-code>
+    <location>/resultado-invalido</location>
+    </error-page>
+    
+    
+    
+    
 </web-app>

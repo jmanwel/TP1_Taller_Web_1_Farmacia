@@ -19,7 +19,7 @@ public class Direccion {
 	private String calle;
 	private String numero;
 	
-	@ManyToOne (fetch = FetchType.LAZY)
+	@ManyToOne 
 	private Barrio barrio;
 	
 	public Direccion(String calle, String numero) {
